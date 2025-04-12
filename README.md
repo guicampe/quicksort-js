@@ -1,0 +1,2 @@
+# quicksort
+ Estudos sobre quicksort
