@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFA494;
+}
+
+header {
+    display: block;
+    background-color: white;
+    max-width: 600px;
+    min-height: 150px;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
+}
+
+header > h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+header > p {
+    padding: 10px 10px 10px 20px;
+}
+
+section > div {
+    display: block;
+    background-color: #ebebeb;
+    max-width: 600px;
+    min-height: 150px;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
+}
+
+section > div > h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+#numeros {
+    padding: 6px;
+    margin: 0px 5px 25px 100px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+#botaoAdicionar {
+    padding: 4px;
+    border-radius: 6px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+#botaoQuicksort {
+    padding: 4px;
+    border: none;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: auto;
+}
+
+#resultado {
+    
+}
