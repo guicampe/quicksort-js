@@ -9,10 +9,13 @@ function adiciona() {
     const input = document.querySelector('#numeros');
     const valor = input.value.trim();
 
-    if (valor === '') return;
+    if (valor === '') {
+        alert('Adicione um número!')
+        return;
+    }
 
     arr.push(Number(valor));
-    res.innerHTML = arr.join(' - ');
+    res.innerHTML = arr.join(', ');
     
     input.value = '';
     input.focus();
@@ -51,5 +54,5 @@ function quicksort(arr) {
 
 document.querySelector('#botaoQuicksort').addEventListener('click', function(){
     const resultadoFinal = quicksort(arr);
-    resQS.innerHTML = resultadoFinal.join(' - ');
+    resQS.innerHTML = resultadoFinal.join(', ');
 });

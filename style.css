@@ -20,13 +20,18 @@ header {
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
 }
 
-header > h1 {
+header > h1, h2 {
     text-align: center;
     padding: 10px;
 }
 
 header > p {
     padding: 10px 10px 10px 20px;
+}
+
+#aviso {
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 section > div {
@@ -74,5 +79,11 @@ section > div > h2 {
 #resultado {
     text-align: center;
     padding-bottom: 15px;
+    word-wrap: break-word;
+}
+
+#resultadoQuicksort {
+    text-align: center;
+    padding-top: 15px;
     word-wrap: break-word;
 }
