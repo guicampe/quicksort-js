@@ -9,7 +9,7 @@ function adiciona() {
     const input = document.querySelector('#numeros');
     const valor = input.value.trim();
 
-    if (valor === '') {
+    if (valor === '' || isNaN(valor)) {
         alert('Adicione um número!')
         return;
     }
