@@ -13,20 +13,21 @@ body {
 header {
     display: block;
     background-color: white;
-    width: 65%;
+    width: 65vw;
+    max-width: 400px;
     min-height: 150px;
     margin: 25px auto;
     border-radius: 10px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
-}
-
-header > h1, h2 {
     text-align: center;
-    padding: 10px;
+    padding: 10px 20px;
+    background-color: #E5CFCC;
+    color: #1A100E;
 }
 
 header > p {
     padding: 10px 10px 10px 20px;
+    text-align: left;
 }
 
 #aviso {
@@ -37,53 +38,62 @@ header > p {
 section > div {
     display: block;
     background-color: #ebebeb;
-    width: 50%;
+    text-align: center;
+    width: 65vw;
+    max-width: 400px;
     min-height: 150px;
     margin: 0px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.15);
-}
-
-section > div > h2 {
-    text-align: center;
-    padding: 10px;
+    background-color: #E5CFCC;
+    color: #1A100E;
 }
 
 #numeros {
     padding: 6px;
-    margin: 0px 5px 25px 100px;
+    margin: 10px 0px;
     border-radius: 8px;
     border: none;
     box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+    background-color: #D5A59F;
+    color: #1A100E;
 }
 
-#botaoAdicionar {
+#botaoAdicionar, #botaoQuicksort {
     padding: 4px;
     border-radius: 6px;
     border: none;
     background-color: #fff;
     box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+    background-color: #80605C;
+    color: #1A100E;
+    font-weight: bold;
+    transition: background ease-in-out 0.4s;
+}
+
+#botaoAdicionar:hover, #botaoQuicksort:hover {
+    background-color: #D5A59F;
+    cursor: pointer;
 }
 
 #botaoQuicksort {
-    padding: 4px;
-    border: none;
-    border-radius: 6px;
-    background-color: #fff;
-    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
     display: block;
     margin: auto;
 }
 
-#resultado {
-    text-align: center;
-    padding-bottom: 15px;
+#resultado, #resultadoQuicksort {
+    padding: 15px;
     word-wrap: break-word;
 }
 
-#resultadoQuicksort {
+footer {
+    background-color: #E5CFCC;
+    color: #1A100E;
+    padding: 12px;
     text-align: center;
-    padding-top: 15px;
-    word-wrap: break-word;
+    margin: 10px auto;
+    max-width: 400px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
 }
