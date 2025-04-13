@@ -3,6 +3,7 @@ const res = document.querySelector('#resultado');
 const resQS = document.querySelector('#resultadoQuicksort');
 document.querySelector('#numeros').focus();
 document.querySelector('#botaoQuicksort').style.display = 'none';
+document.querySelector('#botaoRefazer').style.display = 'none';
 
 // funcao adiciona itens no array e mostra na tela
 function adiciona() {
@@ -50,9 +51,18 @@ function quicksort(arr) {
     }
 
     return [...quicksort(menores), pivo, ...quicksort(maiores)];
+
 }
 
 document.querySelector('#botaoQuicksort').addEventListener('click', function(){
     const resultadoFinal = quicksort(arr);
     resQS.innerHTML = resultadoFinal.join(', ');
+
+    document.querySelector('#botaoRefazer').style.display = 'block';
 });
+
+function refazer() {
+    res.innerHTML = '';
+    resQS.innerHTML = '';
+    arr = [];
+}

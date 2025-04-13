@@ -60,7 +60,7 @@ section > div {
     color: #1A100E;
 }
 
-#botaoAdicionar, #botaoQuicksort {
+#botaoAdicionar, #botaoQuicksort, #botaoRefazer {
     padding: 4px;
     border-radius: 6px;
     border: none;
@@ -72,14 +72,14 @@ section > div {
     transition: background ease-in-out 0.4s;
 }
 
-#botaoAdicionar:hover, #botaoQuicksort:hover {
+#botaoAdicionar:hover, #botaoQuicksort:hover, #botaoRefazer:hover {
     background-color: #D5A59F;
     cursor: pointer;
 }
 
-#botaoQuicksort {
+#botaoQuicksort, #botaoRefazer {
     display: block;
-    margin: auto;
+    margin: 10px auto;
 }
 
 #resultado, #resultadoQuicksort {
